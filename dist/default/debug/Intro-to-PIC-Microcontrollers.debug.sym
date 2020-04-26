@@ -422,9 +422,9 @@ idloc 200000 2000FF IDLOC 200000 0
 nvCOMRAM 1 10 COMRAM 1 1
 text0 F04 1217 CODE F04 0
 %locals
-dist/default/production\MPLAB_Intro.X.production.o
+dist/default/debug\Intro-to-PIC-Microcontrollers.debug.o
 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f47q10.h
-C:\Users\Chas\AppData\Local\Temp\sbi4.s
+C:\Users\Chas\AppData\Local\Temp\sdfk.s
 8324 120E 0 CODE 0
 8326 120E 0 CODE 0
 8329 120E 0 CODE 0

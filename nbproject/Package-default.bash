@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/MPLAB_Intro.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=MPLAB_Intro.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=mplabintro.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Intro-to-PIC-Microcontrollers.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=Intro-to-PIC-Microcontrollers.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=intro-to-pic-microcontrollers/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/mplabintro.x/bin
+makeDirectory ${TMPDIR}/intro-to-pic-microcontrollers/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/mplabintro.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/intro-to-pic-microcontrollers.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/mplabintro.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/intro-to-pic-microcontrollers.tar *
 checkReturnCode
 
 # Cleanup

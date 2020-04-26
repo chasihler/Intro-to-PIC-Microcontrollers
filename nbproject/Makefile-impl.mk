@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=MPLAB Intro.X
+PROJECTNAME=Intro-to-PIC-Microcontrollers
 
 # Active Configuration
 DEFAULTCONF=default

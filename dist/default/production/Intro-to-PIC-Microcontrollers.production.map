@@ -3,12 +3,14 @@ Microchip MPLAB XC8 Compiler V2.10 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.10\pic\dat\en_msgs.txt \
-  -cs -h+dist/default/production\MPLAB_Intro.X.production.sym \
-  --cmf=dist/default/production\MPLAB_Intro.X.production.cmf -z -Q18F47Q10 \
-  -oC:\Users\Chas\AppData\Local\Temp\sbi4.2 --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/MPLAB_Intro.X.production.map -E1 -ver=XC8 \
-  --acfsm=1493 -ASTACK=060h-0CFFh -pstack=STACK -ACODE=00h-01FFFFh \
-  -ACONST=00h-01FFFFh -ASMALLCONST=0F00h-0FFFhx497 \
+  -cs \
+  -h+dist/default/production\Intro-to-PIC-Microcontrollers.production.sym \
+  --cmf=dist/default/production\Intro-to-PIC-Microcontrollers.production.cmf \
+  -z -Q18F47Q10 -oC:\Users\Chas\AppData\Local\Temp\sig8.2 \
+  --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/Intro-to-PIC-Microcontrollers.production.map \
+  -E1 -ver=XC8 --acfsm=1493 -ASTACK=060h-0CFFh -pstack=STACK \
+  -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=0F00h-0FFFhx497 \
   -AMEDIUMCONST=0F00h-0FFFFh,010F00h-01FFFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-0CFFh,0E00h-0E1Eh -ABIGRAM=01h-0CFFh,0E00h-0E1Eh \
   -ARAM=060h-0FFh,0100h-01FFhx12,0E00h-0E1Eh -ABANK0=060h-0FFh \
@@ -26,8 +28,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Chas\AppData\Local\Temp\sbi4.o \
-  dist/default/production\MPLAB_Intro.X.production.o 
+  C:\Users\Chas\AppData\Local\Temp\sig8.o \
+  dist/default/production\Intro-to-PIC-Microcontrollers.production.o 
 
 Object code version is 3.11
 
@@ -39,11 +41,11 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Chas\AppData\Local\Temp\sbi4.o
+C:\Users\Chas\AppData\Local\Temp\sig8.o
                 init                                  0        0        4        0       0
                 idloc                            200000   200000      100   200000       0
                 config                           300000   300000        C   300000       0
-dist/default/production\MPLAB_Intro.X.production.o
+dist/default/production\Intro-to-PIC-Microcontrollers.production.o
                 smallconst                          F00      F00        4      780       0
                 text15                             110C     110C       2A      782       0
                 text14                             11A4     11A4       18      782       0
